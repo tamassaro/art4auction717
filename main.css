@@ -1,0 +1,60 @@
+@import url("https://use.typekit.net/sce4zcz.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'aktiv-grotesk-extended', sans-serif;
+  margin: 0 auto;
+  width: 80vw;
+  text-align: center;
+}
+
+.nav-wrapper img {
+  width: 60vw;
+  padding: 1em 0em;
+}
+
+.hero-wrapper {
+  margin: 0 auto;
+  width: 80vw;
+  padding: 1em;
+}
+
+.hero-wrapper img {
+  width: 80vw;
+  padding-bottom: 1.4em;
+  display: none;
+}
+
+.hero-wrapper .hero-container-left {
+  text-align: left;
+}
+
+.hero-wrapper .hero-container-left .hero-header h1 {
+  font-size: 2.2em;
+}
+
+.hero-wrapper .hero-container-left .hero-button {
+  text-align: center;
+}
+
+.card-one img {
+  width: 70%;
+}
+
+.card-one p {
+  text-align: left;
+}
+
+.card-two img {
+  width: 70%;
+}
+
+.card-two p {
+  text-align: left;
+}
+/*# sourceMappingURL=main.css.map */

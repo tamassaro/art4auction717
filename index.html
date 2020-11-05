@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>art4auction717</title>
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        />
+        <!-- Roboto and Material Icon Fonts -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <!-- Bootstrap core CSS -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <!-- Material Design Bootstrap -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css"
+            rel="stylesheet"
+        />
+        <!--Materialize-->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+            rel="stylesheet"
+        />
+        <!-- End head section scripts -->
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="nav.css" />
+    </head>
+    <body>
+        <header>
+            <div class="nav-wrapper">
+                <a class="logo-svg" href="#">
+                    <img src="./images/logo.svg" alt="logo" />
+                </a>
+                <!-- <div class="mylinks">
+                    <a href="#">Home</a>
+                    <a href="#">Auctions</a>
+                    <a href="#">Why Us</a>
+                    <a href="#">Support</a>
+                    <a class="forartists" href="#">For Artists</a>
+                    <div>
+                        <a class="forcharities" href="#">For Charities</a>
+                    </div>
+                </div> -->
+            </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" id="closeNav"
+                    >&times;</a
+                >
+                <div class="overlay-content">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="hero-wrapper">
+                <img
+                    class="laptop-svg"
+                    src="./images/laptop.svg"
+                    alt="laptop"
+                />
+                <div class="hero-container-left">
+                    <div class="hero-header">
+                        <h1>Local&nbsp;art.<br />Local&nbsp;causes.</h1>
+                    </div>
+
+                    <div class="hero-subtext">
+                        <p>
+                            We are a Harrisburg-based nonprofit generating
+                            revenue through the sale of art donated by local
+                            artists. These donations go to charities supporting
+                            people-of-color, bail funds, and growth
+                            in&nbsp;our&nbsp;community.
+                        </p>
+                    </div>
+                    <div class="hero-button">
+                        <button>Learn More</button>
+                    </div>
+                </div>
+                <div class="hero-svg"></div>
+            </div>
+
+            <div class="cards-section-wrapper">
+                <div class="card-one">
+                    <h1 class="card-title">Create.</h1>
+                    <img src="./images/artist_717.svg" alt="Artist" />
+                    <p class="card-subtext">
+                        Artists and craftsmen donate their wares to be sold by
+                        art4auction717. Buyers submit their bids, the highest
+                        winning the one-of-a-kind piece of artwork direct
+                        from&nbsp;the&nbsp;source.
+                    </p>
+                    <button class="card-button">Submit Art</button>
+                </div>
+                <div class="card-two">
+                    <h1 class="card-title">Donate.</h1>
+                    <img src="./images/donation_717.svg" alt="auctioneer" />
+                    <p class="card-subtext">
+                        100% of the proceeds from auctions are donated to local
+                        charities. The charities are chosen based on their
+                        track-record, relevance to the community, and support of
+                        POC-backed&nbsp;causes.
+                    </p>
+                    <button class="card-button">Auctions</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="fixed-action-btn" style="bottom: 25px; right: 25px">
+                <a class="btn-floating btn-lg green accent-2" id="openNav">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </footer>
+        <!-- JQuery -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ></script>
+        <!-- Bootstrap tooltips -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+        ></script>
+        <!-- Bootstrap core JavaScript -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+        ></script>
+        <!-- MDB core JavaScript -->
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"
+        ></script>
+        <script type="text/javascript" src="main.js"></script>
+        <!-- End body scripts -->
+        <script>
+            $('#openNav').on('click', function () {
+                $('#myNav').css('width', '100%');
+            });
+
+            $('#closeNav').on('click', function () {
+                $('#myNav').css('width', '0%');
+            });
+        </script>
+    </body>
+</html>
