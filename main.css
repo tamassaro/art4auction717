@@ -2,8 +2,17 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0px;
+  margin: 0;
   padding: 0px;
+}
+
+html {
+  font-size: 2vw;
+}
+
+h1 {
+  font-family: 'playfair-display', serif;
+  font-weight: 900;
 }
 
 body {
@@ -11,17 +20,44 @@ body {
   margin: 0 auto;
   width: 80vw;
   text-align: center;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 2em;
+}
+
+button {
+  font-size: 2em;
+}
+
+.green-mobile {
+  position: absolute;
+  z-index: -1;
+  left: -10px;
+  top: 9em;
+  width: 100vw;
+}
+
+.purple-mobile {
+  position: absolute;
+  z-index: -1;
+  left: -20px;
+  top: 76em;
+  width: 110%;
 }
 
 .nav-wrapper img {
   width: 60vw;
-  padding: 1em 0em;
+  padding: 2em 0em 0.4em;
 }
 
 .hero-wrapper {
   margin: 0 auto;
   width: 80vw;
   padding: 1em;
+  padding-top: 4em;
+  margin-bottom: 36em;
 }
 
 .hero-wrapper img {
@@ -35,7 +71,9 @@ body {
 }
 
 .hero-wrapper .hero-container-left .hero-header h1 {
-  font-size: 2.2em;
+  color: white;
+  text-shadow: 0px 3px 4px #0000004d;
+  letter-spacing: 0.06em;
 }
 
 .hero-wrapper .hero-container-left .hero-button {
@@ -56,5 +94,17 @@ body {
 
 .card-two p {
   text-align: left;
+}
+
+.card-three img {
+  width: 70%;
+}
+
+.card-three p {
+  text-align: left;
+}
+
+.footer-container li {
+  font-size: 2em;
 }
 /*# sourceMappingURL=main.css.map */
