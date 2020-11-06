@@ -1,6 +1,8 @@
 @import url('https://use.typekit.net/sce4zcz.css');
 $mainPurple: #8044f2;
+$mainPurpleDark: #3d1b7e;
 $mainGreen: #76f8b7;
+$mainGreenDark: #018060;
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,6 +29,11 @@ p {
     font-size: 2em;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 button {
     font-size: 2em;
     margin-top: 1.4em;
@@ -36,6 +43,7 @@ button {
     background-color: $mainPurple;
     color: white;
     border: none;
+    font-weight: 600;
 }
 
 .green-mobile {
@@ -59,6 +67,9 @@ button {
         width: 60vw;
         padding: 4em 0em 0.4em;
     }
+    .mylinks {
+        display: none;
+    }
 }
 
 .hero-wrapper {
@@ -66,7 +77,7 @@ button {
     width: 80vw;
     padding: 0em;
     padding-top: 6em;
-    margin-bottom: 28em;
+    margin-bottom: 22em;
     img {
         width: 80vw;
         padding-bottom: 1.4em;
@@ -80,13 +91,24 @@ button {
                 color: white;
                 text-shadow: 0px 3px 4px #0000004d;
                 letter-spacing: 0.06em;
-                margin-bottom: 0.4em;
+                margin-bottom: 0.6em;
             }
         }
         .hero-subtext {
+            margin-bottom: 3em;
+            font-size: 1.1em;
         }
         .hero-button {
             text-align: center;
+            margin-right: -6em;
+            button {
+                padding: 1.2em 1.4em;
+                background-color: $mainPurple;
+                transition: 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+            }
+            button:hover {
+                background-color: $mainPurpleDark;
+            }
         }
     }
 }
@@ -100,10 +122,12 @@ button {
         text-shadow: 0px 3px 6px #00000029;
         font-size: 6em;
         margin-bottom: 0.6em;
+        letter-spacing: 0.06em;
     }
     p {
         color: white;
         line-height: 1.8em;
+        font-weight: 500;
     }
     button {
         margin-top: 1.4em;
@@ -111,7 +135,12 @@ button {
         border-radius: 12px;
         box-shadow: 0px 6px 6px #00000029;
         background-color: $mainGreen;
+        color: black;
         border: none;
+        transition: 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    }
+    button:hover {
+        background-color: $mainGreenDark;
     }
     img {
         display: block;
@@ -145,6 +174,7 @@ button {
 
 .card-three {
     padding-top: 20em;
+    padding-bottom: 30em;
     img {
         width: 100%;
         margin-top: 2em;
@@ -152,17 +182,31 @@ button {
     p {
         margin-top: 1em;
         text-align: left;
+        span {
+            font-weight: 800;
+        }
     }
 }
 
 .footer-container {
+    padding: 5em 5em 1em;
     text-align: left;
     width: 100vw;
     background-color: white;
-    li {
+    img {
+        width: 14em;
+    }
+    ul {
         font-size: 2em;
+        padding-bottom: 2em;
     }
     p {
+        font-size: 1.4em;
         text-align: center;
+        color: $mainPurple;
+        span {
+            font-weight: 800;
+            text-decoration: underline;
+        }
     }
 }
