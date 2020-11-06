@@ -57,3 +57,6 @@
 main {
     height: 100vh;
 }
+
+@media (min-width: 640px) {
+}
