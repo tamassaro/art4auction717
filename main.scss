@@ -19,7 +19,6 @@ h1 {
 body {
     font-family: 'aktiv-grotesk-extended', sans-serif;
     margin: 0 auto;
-    width: 80vw;
     text-align: center;
     overflow-x: hidden;
 }
@@ -30,13 +29,20 @@ p {
 
 button {
     font-size: 2em;
+    margin-top: 1.4em;
+    padding: 0.8em 2em;
+    border-radius: 12px;
+    box-shadow: 0px 6px 6px #00000029;
+    background-color: $mainPurple;
+    color: white;
+    border: none;
 }
 
 .green-mobile {
     position: absolute;
     z-index: -1;
     left: -10px;
-    top: 9em;
+    top: 11em;
     width: 100vw;
 }
 
@@ -51,16 +57,16 @@ button {
 .nav-wrapper {
     img {
         width: 60vw;
-        padding: 2em 0em 0.4em;
+        padding: 4em 0em 0.4em;
     }
 }
 
 .hero-wrapper {
     margin: 0 auto;
     width: 80vw;
-    padding: 1em;
-    padding-top: 4em;
-    margin-bottom: 36em;
+    padding: 0em;
+    padding-top: 6em;
+    margin-bottom: 28em;
     img {
         width: 80vw;
         padding-bottom: 1.4em;
@@ -70,9 +76,11 @@ button {
         text-align: left;
         .hero-header {
             h1 {
+                font-size: 5.5em;
                 color: white;
                 text-shadow: 0px 3px 4px #0000004d;
                 letter-spacing: 0.06em;
+                margin-bottom: 0.4em;
             }
         }
         .hero-subtext {
@@ -83,9 +91,40 @@ button {
     }
 }
 
-.card-one {
+.cards-section-wrapper {
+    margin: 0 auto;
+    width: 80vw;
+
+    h1 {
+        color: $mainGreen;
+        text-shadow: 0px 3px 6px #00000029;
+        font-size: 6em;
+        margin-bottom: 0.6em;
+    }
+    p {
+        color: white;
+        line-height: 1.8em;
+    }
+    button {
+        margin-top: 1.4em;
+        padding: 0.8em 2em;
+        border-radius: 12px;
+        box-shadow: 0px 6px 6px #00000029;
+        background-color: $mainGreen;
+        border: none;
+    }
     img {
-        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.card-one {
+    h1 {
+        margin-bottom: -0.2em;
+    }
+    img {
+        width: 100%;
     }
     p {
         text-align: left;
@@ -93,25 +132,37 @@ button {
 }
 
 .card-two {
+    padding-top: 20em;
     img {
-        width: 70%;
+        width: 110%;
+        margin-top: 2em;
     }
     p {
+        margin-top: 0.6em;
         text-align: left;
     }
 }
 
 .card-three {
+    padding-top: 20em;
     img {
-        width: 70%;
+        width: 100%;
+        margin-top: 2em;
     }
     p {
+        margin-top: 1em;
         text-align: left;
     }
 }
 
 .footer-container {
+    text-align: left;
+    width: 100vw;
+    background-color: white;
     li {
         font-size: 2em;
+    }
+    p {
+        text-align: center;
     }
 }

@@ -18,7 +18,6 @@ h1 {
 body {
   font-family: 'aktiv-grotesk-extended', sans-serif;
   margin: 0 auto;
-  width: 80vw;
   text-align: center;
   overflow-x: hidden;
 }
@@ -29,13 +28,21 @@ p {
 
 button {
   font-size: 2em;
+  margin-top: 1.4em;
+  padding: 0.8em 2em;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 6px 6px #00000029;
+          box-shadow: 0px 6px 6px #00000029;
+  background-color: #8044f2;
+  color: white;
+  border: none;
 }
 
 .green-mobile {
   position: absolute;
   z-index: -1;
   left: -10px;
-  top: 9em;
+  top: 11em;
   width: 100vw;
 }
 
@@ -49,15 +56,15 @@ button {
 
 .nav-wrapper img {
   width: 60vw;
-  padding: 2em 0em 0.4em;
+  padding: 4em 0em 0.4em;
 }
 
 .hero-wrapper {
   margin: 0 auto;
   width: 80vw;
-  padding: 1em;
-  padding-top: 4em;
-  margin-bottom: 36em;
+  padding: 0em;
+  padding-top: 6em;
+  margin-bottom: 28em;
 }
 
 .hero-wrapper img {
@@ -71,40 +78,101 @@ button {
 }
 
 .hero-wrapper .hero-container-left .hero-header h1 {
+  font-size: 5.5em;
   color: white;
   text-shadow: 0px 3px 4px #0000004d;
   letter-spacing: 0.06em;
+  margin-bottom: 0.4em;
 }
 
 .hero-wrapper .hero-container-left .hero-button {
   text-align: center;
 }
 
+.cards-section-wrapper {
+  margin: 0 auto;
+  width: 80vw;
+}
+
+.cards-section-wrapper h1 {
+  color: #76f8b7;
+  text-shadow: 0px 3px 6px #00000029;
+  font-size: 6em;
+  margin-bottom: 0.6em;
+}
+
+.cards-section-wrapper p {
+  color: white;
+  line-height: 1.8em;
+}
+
+.cards-section-wrapper button {
+  margin-top: 1.4em;
+  padding: 0.8em 2em;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 6px 6px #00000029;
+          box-shadow: 0px 6px 6px #00000029;
+  background-color: #76f8b7;
+  border: none;
+}
+
+.cards-section-wrapper img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-one h1 {
+  margin-bottom: -0.2em;
+}
+
 .card-one img {
-  width: 70%;
+  width: 100%;
 }
 
 .card-one p {
   text-align: left;
 }
 
+.card-two {
+  padding-top: 20em;
+}
+
 .card-two img {
-  width: 70%;
+  width: 110%;
+  margin-top: 2em;
 }
 
 .card-two p {
+  margin-top: 0.6em;
   text-align: left;
+}
+
+.card-three {
+  padding-top: 20em;
 }
 
 .card-three img {
-  width: 70%;
+  width: 100%;
+  margin-top: 2em;
 }
 
 .card-three p {
+  margin-top: 1em;
   text-align: left;
+}
+
+.footer-container {
+  text-align: left;
+  width: 100vw;
+  background-color: white;
 }
 
 .footer-container li {
   font-size: 2em;
+}
+
+.footer-container p {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
