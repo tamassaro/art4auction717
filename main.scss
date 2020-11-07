@@ -113,6 +113,10 @@ button {
     }
 }
 
+.purple-desktop {
+    display: none;
+}
+
 .cards-section-wrapper {
     margin: 0 auto;
     width: 80vw;
@@ -221,7 +225,6 @@ button {
         margin: 0 auto;
         text-align: left;
         overflow-x: hidden;
-        width: 80vw;
     }
 
     footer {
@@ -229,16 +232,47 @@ button {
     }
 
     .nav-wrapper {
+        margin: 0 auto;
         width: 80vw;
         img {
             width: 20%;
+            padding-top: 2em;
         }
         .mylinks {
             text-align: right;
             display: block;
             float: right;
+            margin-top: 2em;
             a {
-                padding: 1em;
+                padding: 2em 1.4em;
+                font-size: 1.2em;
+                font-weight: 400;
+            }
+            .forartists {
+                float: right;
+                margin-top: -0.8em;
+                border: $mainGreen solid 1px;
+                padding: 1em 1.4em;
+                border-radius: 12px;
+                transition: 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+            }
+            .forartists:hover {
+                background-color: $mainGreen;
+                color: white;
+            }
+            .forcharities {
+                position: absolute;
+                top: 5.4em;
+                right: 8em;
+                border: red solid 1px;
+                padding: 1em 1em;
+                border-radius: 12px;
+                transition: 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+            }
+
+            .forcharities:hover {
+                background-color: red;
+                color: white;
             }
         }
     }
@@ -261,7 +295,7 @@ button {
             position: absolute;
             right: 10vw;
             width: 40vw;
-            padding-bottom: 1.4em;
+            margin-top: 6em;
             display: block;
         }
         .hero-container-left {
@@ -296,10 +330,19 @@ button {
         }
     }
 
+    .purple-desktop {
+        display: block;
+        position: absolute;
+        left: -2em;
+        top: 38em;
+        width: 110%;
+        z-index: -1;
+    }
+
     .cards-section-wrapper {
         width: 100vw;
         clear: both;
-        margin: 0 -5px;
+        margin: 0 auto;
         margin-bottom: 4em;
         button {
             display: none;
@@ -324,6 +367,7 @@ button {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         padding: 0 3em;
         margin: 0 1em;
+        margin-left: 10%;
         background-color: $mainPurple;
         border-radius: 12px;
         height: 70vh;
@@ -359,21 +403,30 @@ button {
     }
 
     .footer-container {
+        margin-top: 14em;
         clear: both;
-        padding: 0;
+        padding: 1em 10em;
         text-align: left;
-        width: 80vw;
+        width: 100vw;
         background-color: white;
         img {
-            width: 14em;
+            width: 8em;
         }
         ul {
-            font-size: 2em;
-            padding-bottom: 2em;
+            float: right;
+            font-size: 1.4em;
+            padding-bottom: 1em;
+            a {
+                font-weight: 200;
+            }
+            .auctions-link {
+                font-weight: 900;
+            }
         }
         p {
+            clear: both;
             font-size: 1.4em;
-            text-align: center;
+            text-align: left;
             color: $mainPurple;
             span {
                 font-weight: 800;
@@ -396,13 +449,28 @@ button {
 }
 
 @media (min-width: 1150px) {
-    .card-one {
-        height: 120vh;
+    .nav-wrapper {
+        .mylinks {
+            a {
+                font-size: 1em;
+            }
+            .forcharities {
+                right: 10em;
+            }
+        }
     }
-    .card-two {
-        height: 120vh;
+    .cards-section-wrapper {
+        p {
+            font-size: 1em;
+        }
     }
-    .card-three {
-        height: 120vh;
-    }
+    // .card-one {
+    //     height: 120vh;
+    // }
+    // .card-two {
+    //     height: 120vh;
+    // }
+    // .card-three {
+    //     height: 120vh;
+    // }
 }

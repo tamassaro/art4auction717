@@ -116,6 +116,10 @@ button {
   background-color: #3d1b7e;
 }
 
+.purple-desktop {
+  display: none;
+}
+
 .cards-section-wrapper {
   margin: 0 auto;
   width: 80vw;
@@ -239,24 +243,55 @@ button {
     margin: 0 auto;
     text-align: left;
     overflow-x: hidden;
-    width: 80vw;
   }
   footer {
     display: none;
   }
   .nav-wrapper {
+    margin: 0 auto;
     width: 80vw;
   }
   .nav-wrapper img {
     width: 20%;
+    padding-top: 2em;
   }
   .nav-wrapper .mylinks {
     text-align: right;
     display: block;
     float: right;
+    margin-top: 2em;
   }
   .nav-wrapper .mylinks a {
-    padding: 1em;
+    padding: 2em 1.4em;
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+  .nav-wrapper .mylinks .forartists {
+    float: right;
+    margin-top: -0.8em;
+    border: #76f8b7 solid 1px;
+    padding: 1em 1.4em;
+    border-radius: 12px;
+    -webkit-transition: 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transition: 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  }
+  .nav-wrapper .mylinks .forartists:hover {
+    background-color: #76f8b7;
+    color: white;
+  }
+  .nav-wrapper .mylinks .forcharities {
+    position: absolute;
+    top: 5.4em;
+    right: 8em;
+    border: red solid 1px;
+    padding: 1em 1em;
+    border-radius: 12px;
+    -webkit-transition: 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transition: 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  }
+  .nav-wrapper .mylinks .forcharities:hover {
+    background-color: red;
+    color: white;
   }
   .green-mobile {
     display: none;
@@ -275,7 +310,7 @@ button {
     position: absolute;
     right: 10vw;
     width: 40vw;
-    padding-bottom: 1.4em;
+    margin-top: 6em;
     display: block;
   }
   .hero-wrapper .hero-container-left {
@@ -307,10 +342,18 @@ button {
   .hero-wrapper .hero-container-left .hero-button button:hover {
     background-color: #3d1b7e;
   }
+  .purple-desktop {
+    display: block;
+    position: absolute;
+    left: -2em;
+    top: 38em;
+    width: 110%;
+    z-index: -1;
+  }
   .cards-section-wrapper {
     width: 100vw;
     clear: both;
-    margin: 0 -5px;
+    margin: 0 auto;
     margin-bottom: 4em;
   }
   .cards-section-wrapper button {
@@ -334,6 +377,7 @@ button {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 0 3em;
     margin: 0 1em;
+    margin-left: 10%;
     background-color: #8044f2;
     border-radius: 12px;
     height: 70vh;
@@ -368,22 +412,31 @@ button {
     color: #76f8b7;
   }
   .footer-container {
+    margin-top: 14em;
     clear: both;
-    padding: 0;
+    padding: 1em 10em;
     text-align: left;
-    width: 80vw;
+    width: 100vw;
     background-color: white;
   }
   .footer-container img {
-    width: 14em;
+    width: 8em;
   }
   .footer-container ul {
-    font-size: 2em;
-    padding-bottom: 2em;
+    float: right;
+    font-size: 1.4em;
+    padding-bottom: 1em;
+  }
+  .footer-container ul a {
+    font-weight: 200;
+  }
+  .footer-container ul .auctions-link {
+    font-weight: 900;
   }
   .footer-container p {
+    clear: both;
     font-size: 1.4em;
-    text-align: center;
+    text-align: left;
     color: #8044f2;
   }
   .footer-container p span {
@@ -405,14 +458,14 @@ button {
 }
 
 @media (min-width: 1150px) {
-  .card-one {
-    height: 120vh;
+  .nav-wrapper .mylinks a {
+    font-size: 1em;
   }
-  .card-two {
-    height: 120vh;
+  .nav-wrapper .mylinks .forcharities {
+    right: 10em;
   }
-  .card-three {
-    height: 120vh;
+  .cards-section-wrapper p {
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=main.css.map */
