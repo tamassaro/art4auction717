@@ -1,0 +1,129 @@
+@import url('https://use.typekit.net/sce4zcz.css');
+$mainPurple: #8044f2;
+$mainPurpleDark: #3d1b7e;
+$mainGreen: #76f8b7;
+$mainGreenDark: #018060;
+
+.hero-wrapper {
+    margin: 0 auto;
+    width: 80vw;
+    padding: 0em;
+    padding-top: 6em;
+    margin-bottom: 10em;
+    .hero-container-left {
+        text-align: left;
+        .hero-header {
+            h1 {
+                font-size: 5.5em;
+                color: black;
+                text-shadow: 0px 3px 4px #0000004d;
+                letter-spacing: 0.06em;
+                margin-bottom: 0.6em;
+            }
+        }
+        .hero-subtext {
+            margin-bottom: 3em;
+            font-size: 1.1em;
+        }
+    }
+}
+
+.form-wrapper {
+    h1 {
+        text-shadow: 0px 3px 6px #00000029;
+        text-align: center;
+        font-size: 3em;
+        padding-bottom: 1em;
+        letter-spacing: 0.02em;
+    }
+    .col {
+        margin: 0;
+        padding: 0;
+    }
+    label {
+        margin-top: -10px;
+        font-size: 12px;
+    }
+    input[type='text'],
+    input[type='email'] {
+        font-size: 24px;
+    }
+    .file-path-wrapper {
+        input[type='text'] {
+            font-size: 2.4vw;
+        }
+    }
+    padding: 0;
+    margin: 0 auto;
+    width: 80vw;
+    .btn {
+        background-color: white;
+        color: black;
+        border-radius: 15px;
+        border: $mainGreen 1px solid;
+        font-weight: 300;
+    }
+    .btn:hover {
+        background-color: $mainGreen;
+        color: white;
+        box-shadow: none;
+    }
+    #submit-btn {
+        color: black;
+        border-radius: 12px;
+        border: $mainPurple 1px solid;
+        font-weight: 700;
+        font-size: 1.4em;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    #submit-btn:hover {
+        background-color: $mainPurple;
+        color: white;
+    }
+    #submit-wrapper {
+        text-align: center;
+        position: absolute;
+        right: 0;
+    }
+}
+
+.footer-container {
+    margin-top: 10em;
+    padding: 5em 5em 1em;
+    text-align: left;
+    width: 100vw;
+    background-color: white;
+    img {
+        width: 14em;
+    }
+    ul {
+        font-size: 2em;
+        padding-bottom: 2em;
+    }
+    p {
+        font-size: 1.4em;
+        text-align: center;
+        color: $mainPurple;
+        span {
+            font-weight: 800;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .hero-header {
+        width: 60%;
+    }
+
+    .forartists {
+        float: right;
+        margin-top: -0.8em;
+        border: $mainGreen solid 1px;
+        color: white;
+        background-color: $mainGreen;
+        padding: 1em 1.4em;
+        border-radius: 12px;
+    }
+}

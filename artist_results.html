@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Results</title>
+        <link rel="stylesheet" href="main.css" />
+        <style>
+            body {
+                padding-top: 2em;
+                width: 80vw;
+                font-size: 2em;
+                line-height: 2em;
+            }
+            a {
+                font-weight: 900;
+                color: #8044f2;
+                text-decoration: underline;
+            }
+            h1 {
+                font-weight: 900;
+                color: #8044f2;
+                text-decoration: none;
+                margin-bottom: 1em;
+                text-shadow: 0px 3px 4px #0000004d;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Thanks for your submission!</h1>
+        <div id="results"></div>
+        <a href="/forartists.html">Back to Form</a>
+        <script>
+            const resultsList = document.getElementById('results');
+            new URLSearchParams(window.location.search).forEach(
+                (value, name) => {
+                    resultsList.append(`${name}: ${value}`);
+                    resultsList.append(document.createElement('br'));
+                }
+            );
+        </script>
+    </body>
+</html>
