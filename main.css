@@ -139,20 +139,31 @@ button {
   font-weight: 500;
 }
 
-.cards-section-wrapper button {
-  margin-top: 1.4em;
-  padding: 0.8em 2em;
+.cards-section-wrapper .card-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+  font-size: 2em;
   border-radius: 12px;
   -webkit-box-shadow: 0px 6px 6px #00000029;
           box-shadow: 0px 6px 6px #00000029;
   background-color: #76f8b7;
-  color: black;
+  color: white;
   border: none;
+  font-weight: 600;
   -webkit-transition: 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   transition: 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
-.cards-section-wrapper button:hover {
+.cards-section-wrapper .card-button a {
+  display: inline-block;
+  padding: 0.8em 2em;
+  height: 100%;
+  width: 100%;
+}
+
+.cards-section-wrapper .card-button:hover {
   background-color: #018060;
 }
 
@@ -160,6 +171,10 @@ button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.card-one {
+  position: relative;
 }
 
 .card-one h1 {
@@ -175,6 +190,7 @@ button {
 }
 
 .card-two {
+  position: relative;
   padding-top: 20em;
 }
 
@@ -189,6 +205,7 @@ button {
 }
 
 .card-three {
+  position: relative;
   padding-top: 20em;
   padding-bottom: 30em;
 }
@@ -356,8 +373,13 @@ button {
     margin: 0 auto;
     margin-bottom: 4em;
   }
-  .cards-section-wrapper button {
-    display: none;
+  .cards-section-wrapper .card-button {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 4%;
+    text-align: center;
+    font-size: 1.4em;
   }
   .cards-section-wrapper h1 {
     font-size: 5em;
@@ -380,7 +402,7 @@ button {
     margin-left: 10%;
     background-color: #8044f2;
     border-radius: 12px;
-    height: 70vh;
+    height: 68vh;
   }
   .card-one img {
     margin-top: 4em;
@@ -394,7 +416,7 @@ button {
     margin: 0 1em;
     background-color: #8044f2;
     border-radius: 12px;
-    height: 70vh;
+    height: 68vh;
   }
   .card-three {
     width: 26vw;
@@ -405,7 +427,7 @@ button {
     margin: 0 1em;
     background-color: #8044f2;
     border-radius: 12px;
-    height: 70vh;
+    height: 68vh;
   }
   .card-three span {
     font-size: 1.4em;
@@ -445,27 +467,55 @@ button {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .card-one {
-    height: 90vh;
+    height: 80vh;
   }
   .card-two {
-    height: 90vh;
+    height: 80vh;
   }
   .card-three {
-    height: 90vh;
+    height: 80vh;
+  }
+}
+
+@media (min-width: 900px) {
+  .card-one {
+    height: 100vh;
+  }
+  .card-two {
+    height: 100vh;
+  }
+  .card-three {
+    height: 100vh;
   }
 }
 
 @media (min-width: 1150px) {
+  .nav-wrapper {
+    height: 10vh;
+  }
   .nav-wrapper .mylinks a {
     font-size: 1em;
   }
   .nav-wrapper .mylinks .forcharities {
     right: 10em;
   }
+  .hero-wrapper {
+    padding: 0;
+    height: 90vh;
+  }
   .cards-section-wrapper p {
     font-size: 1em;
+  }
+  .card-one {
+    height: 110vh;
+  }
+  .card-two {
+    height: 110vh;
+  }
+  .card-three {
+    height: 110vh;
   }
 }
 /*# sourceMappingURL=main.css.map */
