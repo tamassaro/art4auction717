@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/sce4zcz.css");
 .hero-wrapper {
-  margin-bottom: 8em;
+  margin-bottom: 4em;
 }
 
 .hero-wrapper img {
@@ -8,8 +8,10 @@
 }
 
 .hero-wrapper .hero-container-left .hero-header h1 {
-  font-size: 4em;
+  font-size: 5.5em;
   color: black;
+  text-shadow: 0px 3px 4px #0000004d;
+  letter-spacing: 0.06em;
 }
 
 .hero-wrapper .hero-container-left .hero-subtext {
@@ -23,27 +25,52 @@
   margin: 0 auto;
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 4em;
+  grid-gap: 6em;
+}
+
+.grid a {
+  -webkit-transition: 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.grid a:hover {
+  color: #8044f2;
 }
 
 .grid .item {
-  border: black solid 1px;
-  height: 60vh;
+  height: auto;
   width: auto;
 }
 
 .grid .item .item-img {
-  background: url(./images/art1.png) 50% 50% no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  text-align: center;
   margin: 0 auto;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2em;
   height: 250px;
   width: 250px;
-  background-color: #8044f2;
+  background-color: #272727;
+}
+
+.grid .item .item-img img {
+  display: block;
+  height: 100%;
 }
 
 .grid .item .item-info {
   width: 90%;
   margin: 0 auto;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .grid .item .item-info .lot-wrapper {
@@ -79,9 +106,24 @@
   overflow: auto;
 }
 
+.grid .item .item-info-2 a {
+  -webkit-transition: 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.grid .item .item-info-2 a:hover {
+  color: #8044f2;
+}
+
 .grid .item .item-info-2 h2 {
   text-align: left;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 800;
+}
+
+.grid .item .item-info-2 p {
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 2em;
 }
 /*# sourceMappingURL=auctions.css.map */
