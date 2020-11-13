@@ -74,7 +74,7 @@ button {
   width: 80vw;
   padding: 0em;
   padding-top: 6em;
-  margin-bottom: 22em;
+  margin-bottom: 10em;
 }
 
 .hero-wrapper img {
@@ -502,7 +502,7 @@ button {
     right: 10em;
   }
   .hero-wrapper {
-    padding: 0;
+    padding-top: 2em;
     height: 90vh;
   }
   .cards-section-wrapper p {

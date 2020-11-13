@@ -46,7 +46,7 @@
                     <img src="./images/a4a717-logo.svg" alt="logo" />
                 </a>
                 <div class="mylinks">
-                    <a href="#">Auctions</a>
+                    <a href="./auctions.html">Auctions</a>
                     <a href="#">Why Us</a>
                     <a href="#">Support</a>
                     <a class="forartists" href="#">For Artists</a>
@@ -93,7 +93,12 @@
 
             <div class="form-wrapper">
                 <h1>Artist Submission Form</h1>
-                <form class="col s12" action="artist_results.html" method="GET">
+                <form
+                    class="col s12"
+                    action="artist_results.html"
+                    method="GET"
+                    enctype="multipart/form-data"
+                >
                     <div class="row">
                         <div class="input-field col s12">
                             <input
@@ -130,22 +135,15 @@
                             <label for="email">Email</label>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="file-field input-field col s12">
-                            <div class="btn">
-                                <span>Upload</span>
-                                <input name="file" type="file" multiple />
-                            </div>
-                            <div class="file-path-wrapper">
-                                <input
-                                    class="file-path validate"
-                                    type="text"
-                                    id="id_path"
-                                    placeholder="Upload a file."
-                                    readonly
-                                />
-                            </div>
-                        </div>
+                    <div>
+                        <label for="file">Choose file to upload</label>
+                        <input
+                            type="file"
+                            accept="image/*,.svg,.psd,.ai,.pdf"
+                            id="file"
+                            name="file"
+                            multiple
+                        />
                     </div>
                     <div class="row" id="submit-wrapper">
                         <input type="submit" class="btn" id="submit-btn" />
@@ -158,7 +156,11 @@
                     ><img src="./images/mini_logo.svg" alt="a4a717"
                 /></a>
                 <ul class="footer-links">
-                    <li><a class="auctions-link" href="#">Auctions</a></li>
+                    <li>
+                        <a class="auctions-link" href="./auctions.html"
+                            >Auctions</a
+                        >
+                    </li>
                     <li><a href="#">For Artists</a></li>
                     <li><a href="#">For Charities</a></li>
                 </ul>

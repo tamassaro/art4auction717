@@ -1,0 +1,87 @@
+@import url("https://use.typekit.net/sce4zcz.css");
+.hero-wrapper {
+  margin-bottom: 8em;
+}
+
+.hero-wrapper img {
+  display: none;
+}
+
+.hero-wrapper .hero-container-left .hero-header h1 {
+  font-size: 4em;
+  color: black;
+}
+
+.hero-wrapper .hero-container-left .hero-subtext {
+  font-size: 0.9em;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  width: 80vw;
+  margin: 0 auto;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 4em;
+}
+
+.grid .item {
+  border: black solid 1px;
+  height: 60vh;
+  width: auto;
+}
+
+.grid .item .item-img {
+  background: url(./images/art1.png) 50% 50% no-repeat;
+  margin: 0 auto;
+  height: 250px;
+  width: 250px;
+  background-color: #8044f2;
+}
+
+.grid .item .item-info {
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.grid .item .item-info .lot-wrapper {
+  display: block;
+  float: left;
+}
+
+.grid .item .item-info .lot-wrapper h2 {
+  font-size: 12pt;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.grid .item .item-info .price-wrapper {
+  float: right;
+  display: block;
+}
+
+.grid .item .item-info .price-wrapper h2 {
+  font-size: 12pt;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.grid .item .item-info hr {
+  margin: 0;
+  padding: 0;
+}
+
+.grid .item .item-info-2 {
+  width: 90%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.grid .item .item-info-2 h2 {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 800;
+}
+/*# sourceMappingURL=auctions.css.map */

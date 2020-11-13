@@ -26,6 +26,9 @@ $mainGreenDark: #018060;
             font-size: 1.1em;
         }
     }
+    .laptop-svg {
+        margin-top: 10em;
+    }
 }
 
 .form-wrapper {
@@ -48,10 +51,8 @@ $mainGreenDark: #018060;
     input[type='email'] {
         font-size: 24px;
     }
-    .file-path-wrapper {
-        input[type='text'] {
-            font-size: 2.4vw;
-        }
+    #file {
+        font-size: 1em;
     }
     padding: 0;
     margin: 0 auto;
@@ -82,6 +83,7 @@ $mainGreenDark: #018060;
         color: white;
     }
     #submit-wrapper {
+        margin-top: 3em;
         text-align: center;
         position: absolute;
         right: 0;
@@ -125,5 +127,8 @@ $mainGreenDark: #018060;
         background-color: $mainGreen;
         padding: 1em 1.4em;
         border-radius: 12px;
+    }
+    #form {
+        font-size: 2.4em;
     }
 }
