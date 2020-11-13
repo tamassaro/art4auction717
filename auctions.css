@@ -1,10 +1,20 @@
 @import url("https://use.typekit.net/sce4zcz.css");
-.hero-wrapper {
-  margin-bottom: 4em;
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.hero-wrapper img {
-  display: none;
+.hero-wrapper {
+  height: auto;
+  margin-bottom: 8em;
+}
+
+.hero-wrapper #auctioneer-svg {
+  width: 20vw;
+  margin-right: 16em;
+  margin-top: 2em;
 }
 
 .hero-wrapper .hero-container-left .hero-header h1 {
@@ -21,11 +31,14 @@
 .grid {
   display: -ms-grid;
   display: grid;
-  width: 80vw;
   margin: 0 auto;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 6em;
+  -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  -webkit-column-gap: 10em;
+          column-gap: 10em;
+  row-gap: 10em;
+  margin-right: 10vw;
+  margin-left: 10vw;
 }
 
 .grid a {
@@ -33,13 +46,23 @@
   transition: 0.6s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
-.grid a:hover {
-  color: #8044f2;
+.grid .item:hover {
+  background-color: #3d1b7e;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .grid .item {
+  margin: 0 auto;
   height: auto;
-  width: auto;
+  width: 100%;
+  -webkit-box-shadow: 0px 6px 6px #00000029;
+          box-shadow: 0px 6px 6px #00000029;
+  border-radius: 12px;
+  padding-top: 2em;
+  background-color: #8044f2;
+  -webkit-transition: 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transition: 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 .grid .item .item-img {
@@ -56,10 +79,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 2em;
   height: 250px;
   width: 250px;
   background-color: #272727;
+  -webkit-box-shadow: 0px 6px 6px #00000029;
+          box-shadow: 0px 6px 6px #00000029;
+  border-radius: 8px;
 }
 
 .grid .item .item-img img {
@@ -68,6 +93,7 @@
 }
 
 .grid .item .item-info {
+  color: white;
   width: 90%;
   margin: 0 auto;
   overflow: hidden;
@@ -101,6 +127,7 @@
 }
 
 .grid .item .item-info-2 {
+  color: white;
   width: 90%;
   margin: 0 auto;
   overflow: auto;
@@ -119,6 +146,7 @@
   text-align: left;
   font-size: 18px;
   font-weight: 800;
+  margin-top: 0;
 }
 
 .grid .item .item-info-2 p {

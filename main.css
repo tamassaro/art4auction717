@@ -69,6 +69,10 @@ button {
   display: none;
 }
 
+.nav-wrapper .mylinks .active-link {
+  font-weight: 900;
+}
+
 .hero-wrapper {
   margin: 0 auto;
   width: 80vw;

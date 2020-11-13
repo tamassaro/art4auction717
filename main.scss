@@ -69,6 +69,9 @@ button {
     }
     .mylinks {
         display: none;
+        .active-link {
+            font-weight: 900;
+        }
     }
 }
 
